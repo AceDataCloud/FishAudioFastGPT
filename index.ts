@@ -53,13 +53,13 @@ const retrieveHandler = createToolHandler({
 export default defineToolSet({
   manifest: {
     pluginId: 'acedataFishAudio',
-    version: '0.1.0',
+    version: '0.2.0',
     name: { en: 'Ace Data Cloud Fish Audio', 'zh-CN': 'Ace Data Cloud Fish Audio 语音' },
     description: {
       en: 'Generate audio with Fish Audio through Ace Data Cloud and retrieve the same task.',
       'zh-CN': '通过 Ace Data Cloud Fish Audio 语音生成并查询同一任务。'
     },
-    versionDescription: { en: 'Initial release', 'zh-CN': '首次发布' },
+    versionDescription: { en: 'Align API limits and task status handling', 'zh-CN': '对齐 API 限制和任务状态处理' },
     author: 'Ace Data Cloud',
     repoUrl: 'https://github.com/AceDataCloud/FishAudioFastGPT',
     tutorialUrl: 'https://github.com/AceDataCloud/FishAudioFastGPT#quick-start',
