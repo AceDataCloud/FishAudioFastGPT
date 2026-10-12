@@ -81,7 +81,7 @@ const batchHandler = createToolHandler({
 export default defineToolSet({
   manifest: {
     pluginId: 'acedataFishAudio',
-    version: '0.2.0',
+    version: '0.2.1',
     name: { en: 'Ace Data Cloud Fish Audio', 'zh-CN': 'Ace Data Cloud Fish Audio 语音' },
     description: {
       en: 'Generate audio with Fish Audio through Ace Data Cloud and retrieve the same task.',

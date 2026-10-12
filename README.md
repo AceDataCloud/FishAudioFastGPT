@@ -1,6 +1,6 @@
 # Ace Data Cloud Fish Audio for FastGPT
 
-Generate audio and retrieve the result in a FastGPT workflow. [简体中文](README_zh_CN.md) · [Current pricing](https://platform.acedata.cloud/models)
+Generate audio and retrieve the result in a FastGPT workflow. [简体中文](README_zh_CN.md) · [Current pricing](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fishaudiofastgpt_readme_pricing)
 
 ## Quick start
 
@@ -10,7 +10,7 @@ Use FastGPT 4.15 or later. Once published, search FastGPT Marketplace for **Ace 
 
 ### 2. Get an API key
 
-Sign in to [Ace Data Cloud → Applications](https://platform.acedata.cloud/console/applications), open **General Application**, and confirm **Fish Audio** access, balance, and current price. Copy the key using icon **1** below; or select **2 Manage Keys → Create** for a separate FastGPT key. If **Allowed APIs** is enabled, include both /fish/tts and /fish/tasks. In the FastGPT plugin configuration, paste only the key into **Ace Data Cloud API key**, without Bearer or quotes.
+Sign in to [Ace Data Cloud → Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fishaudiofastgpt_readme_api_key), open **General Application**, and confirm **Fish Audio** access, balance, and current price. Copy the key using icon **1** below; or select **2 Manage Keys → Create** for a separate FastGPT key. If **Allowed APIs** is enabled, include both /fish/tts and /fish/tasks. In the FastGPT plugin configuration, paste only the key into **Ace Data Cloud API key**, without Bearer or quotes.
 
 ![Actual Ace Data Cloud application screen with the key redacted](assets/get-api-key-en.png)
 
@@ -38,6 +38,8 @@ The FastGPT screenshots below show installation and a **read-only query of a pre
 ![Previously generated media returned in FastGPT Run Preview](assets/fastgpt-lookup-result.png)
 
 For several existing tasks, **Retrieve tasks** accepts 1–20 Task IDs and queries them in one read-only call. Check each item’s status; a batch is complete only when all items succeed. This does not submit new generation.
+
+A batch stays pending if a requested task is missing or a returned task ID cannot be matched. Verify the existing IDs; do not submit generation again.
 
 ### 4. Copyable no-key example
 
@@ -67,4 +69,4 @@ Local secret files are ignored by Git. Do not publish them.
 | 429 | Wait and lower concurrency; never enable automatic paid generation retries. |
 | timeout / 5xx / failed | Inspect the original task and request history before resubmitting. Give support the task or trace ID, never your key. |
 
-The plugin sends the selected inputs and token to api.acedata.cloud. Calls follow [current pricing](https://platform.acedata.cloud/models). [Privacy](PRIVACY.md) · [Source and support](https://github.com/AceDataCloud/FishAudioFastGPT/issues).
+The plugin sends the selected inputs and token to api.acedata.cloud. Calls follow [current pricing](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=fishaudiofastgpt_readme_pricing). [Privacy](PRIVACY.md) · [Source and support](https://github.com/AceDataCloud/FishAudioFastGPT/issues).
